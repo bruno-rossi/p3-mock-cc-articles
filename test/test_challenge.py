@@ -145,13 +145,13 @@ def test_magazine_get_average_word_count():
 
     assert cosmo.get_average_word_count() == 4250
 
-# def test_magazine_get_top_contributor():
-#     joe = Author('Joe')
-#     anne = Author('Anne')
-#     cosmo = Magazine('Cosmo', 'fashion')
-#     # joe has written one article, anne has written two
-#     Article(joe, cosmo, 'Eight Hours With Lindsay Lohan', 12000)
-#     Article(anne, cosmo, '2023 Tennis Outfits', 250)
-#     Article(anne, cosmo, 'Best iPad Deals', 500)
+def test_magazine_get_top_contributor():
+    joe = Author('Joe')
+    anne = Author('Anne')
+    cosmo = Magazine('Cosmo', 'fashion')
+    # joe has written one article, anne has written two
+    Article(joe, cosmo, 'Eight Hours With Lindsay Lohan', 12000)
+    Article(anne, cosmo, '2023 Tennis Outfits', 250)
+    Article(anne, cosmo, 'Best iPad Deals', 500)
 
-#     assert cosmo.get_top_contributor() == anne
+    assert cosmo.get_top_contributor() == anne
